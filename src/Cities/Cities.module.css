@@ -1,0 +1,21 @@
+.cities {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.city {
+  font-size: 3.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-out, color 0.3s linear, font-weight 0.1s linear;
+  font-weight: lighter;
+}
+
+.city:hover {
+  transform: scale(1.02);
+}
+
+.city.active {
+  color: var(--accent);
+  font-weight: 400;
+}

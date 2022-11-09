@@ -1,0 +1,68 @@
+.body {
+  border: 5px solid var(--white);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  box-shadow: 5px 5px 20px -4px rgba(0, 0, 0, 0.3);
+}
+
+.today {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.today h1,
+.today h2,
+.today h3 {
+  margin: 0;
+}
+
+.today .day {
+  font-weight: lighter;
+  font-size: 3rem;
+}
+
+.today .temp {
+  font-weight: bold;
+  font-size: 6rem;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main img {
+  width: 250px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.forecasts {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.forecast {
+  flex: 1;
+  border-top: 5px solid var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.forecast:not(:last-child) {
+  border-right: 5px solid var(--white);
+}
+
+.forecast .day {
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+.forecast .temp {
+  font-size: 3rem;
+}
