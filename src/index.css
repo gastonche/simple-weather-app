@@ -13,7 +13,7 @@ body {
 
 :root {
   --primary: #46484e;
-  --secondary: #d9e2e8;
+  --secondary: #edf6fb;
   --accent: #62b4ec;
-  --white: white;
+  --white: #fff;
 }
