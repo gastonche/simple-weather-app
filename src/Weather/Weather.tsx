@@ -14,7 +14,7 @@ class Weather extends React.Component<WeatherProps> {
         <section className={styles.today}>
           <h1 className={styles.day}>{this.props.today.day}</h1>
           <main className={styles.main}>
-            <img src="http://openweathermap.org/img/wn/04n@2x.png" alt="" />
+            <img src={`http://openweathermap.org/img/wn/${this.props.today.icon}.png`} alt="" />
             <div>
               <h2 className={styles.temp}>{this.props.today.temp}&deg;</h2>
               <h3 className={styles.day}>{this.props.today.description}</h3>
